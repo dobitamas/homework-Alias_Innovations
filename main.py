@@ -8,6 +8,7 @@ def main():
 
     results = solve_all_numbers(int_numbers)
 
+    # If you provide a txt file to write_to_file() it will read from that txt
     write_to_file(results)
 
 
