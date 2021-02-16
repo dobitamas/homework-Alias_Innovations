@@ -6,14 +6,14 @@ def solve_number(number):
     result_number = ""
 
     temp_number = int(copy.copy(number))
-    print("TEMP NUMBER: ", temp_number)
+
     while temp_number > 0:
 
         for key, value in digits:
             while temp_number >= key:
                 result_number += value
                 temp_number -= key
-                print("RESULT NUMBER: ", result_number)
+
     if len(result_number) == 0:
         return None
 
